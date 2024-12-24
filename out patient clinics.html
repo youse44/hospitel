@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>العيادات الخارجية</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #45abdd; /* خلفية عامة للصفحة */
+        }
+        header {
+            text-align: center;
+            padding: 1rem 0;
+            position: relative;
+        }
+        header h1 {
+            background-image: url(hospital-background-8uzvaaj1wielv1ca.jpg); /* استبدل باسم ملف الخلفية */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 1rem 2rem;
+            display: inline-block;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .section {
+            background: white;
+            margin: 1rem 0;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #007bff;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            margin: 0.5rem 0;
+        }
+        .table-container {
+            overflow-x: auto;
+        }
+        .container {
+    width: 3000px;
+    margin: 0 auto;
+    border: #007bff;
+    padding: 20px;
+   
+    border-radius: 5px;}
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+        table th, table td {
+            border: 1px solid #ddd;
+            padding: 0.5rem;
+            text-align: center;
+        }
+        table th {
+            background-color: #007bff;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>العيادات الخارجية</h1>
+    </header>
+
+    <div class="container">
+        <!-- نبذة عامة عن العيادات -->
+        <section class="section">
+            <h2>نبذة عامة عن العيادات</h2>
+            <p>توفر العيادات الخارجية خدمات طبية شاملة للمرضى في مختلف التخصصات الطبية. يتميز فريقنا الطبي بالكفاءة والخبرة لتقديم أفضل رعاية صحية.</p>
+        </section>
+
+        <!-- جدول المواعيد -->
+        <section class="section">
+            <h2>جدول المواعيد</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>الطبيب</th>
+                            <th>التخصص</th>
+                            <th>أيام العمل</th>
+                            <th>مواعيد العمل</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>د. أحمد محمد</td>
+                            <td>الباطنة</td>
+                            <td>الأحد - الثلاثاء</td>
+                            <td>9:00 صباحًا - 1:00 مساءً</td>
+                        </tr>
+                        <tr>
+                            <td>د. ليلى خالد</td>
+                            <td>الأطفال</td>
+                            <td>الإثنين - الأربعاء</td>
+                            <td>10:00 صباحًا - 2:00 مساءً</td>
+                        </tr>
+                        <tr>
+                            <td>د. محمد علي</td>
+                            <td>العيون</td>
+                            <td>الخميس</td>
+                            <td>11:00 صباحًا - 3:00 مساءً</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- التخصصات المتاحة -->
+        <section class="section">
+            <h2>التخصصات المتاحة</h2>
+            <ul>
+                <li>الباطنة</li>
+                <li>الأطفال</li>
+                <li>العيون</li>
+                <li>النساء والتوليد</li>
+                <li>الجلدية</li>
+            </ul>
+        </section>
+    </div>
+    <div class="container">
+    <form>
+        <label for="name">الاسم:</label>
+        <input type="text" id="name" name="name" required>
+
+
+        <label for="phone">رقم الهاتف:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="department">القسم:</label>
+        <select id="department" name="department" required>
+            <option value="">-- اختار القسم --</option>
+            <option value="cardiology">Cardiology</option>
+            <option value="neurology">Neurology</option>
+            <option value="orthopedics">Orthopedics</option>
+            <option value="pediatrics">Pediatrics</option>
+            <option value="general">General Medicine</option>
+        </select>
+        <label for="date">تاريخ ووقت الحجز:</label>
+        <input type="datetime-local" id="date" name="date" required>
+        <button type="submit">حجز موعد</button>
+    </form>
+    </div>
+</body>
+</html>

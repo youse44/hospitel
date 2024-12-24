@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حجز موعد</title>
+    <link rel="stylesheet" href="style.css">
+<style>
+   body {
+    ont-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #d1ecf6;
+}
+
+.container {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #0838e6;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #0951fa;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+</style>
+</head>
+<body>
+ 
+    <div class="container">
+        <h2>حجز موعد</h2>
+        <form>
+            <label for="name">الاسم:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="phone">رقم الهاتف:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="specialty">التخصص المطلوب:</label>
+            <select id="specialty" name="specialty" required>
+                <option value="general">عام</option>
+                <option value="specialist">أخصائي</option>
+            </select>
+
+            <label for="doctor">اختيار الطبيب:</label>
+            <select id="doctor" name="doctor" required>
+                <option value="doctor1">الطبيب الأول</option>
+                <option value="doctor2">الطبيب الثاني</option>
+            </select>
+        </select>
+        <label for="department">القسم:</label>
+        <select id="department" name="department" required>
+            <option value="">-- اختار القسم --</option>
+            <option value="cardiology">Cardiology</option>
+            <option value="neurology">Neurology</option>
+            <option value="orthopedics">Orthopedics</option>
+            <option value="pediatrics">Pediatrics</option>
+            <option value="general">General Medicine</option>
+            
+            <label for="date">تاريخ ووقت الحجز:</label>
+            <input type="datetime-local" id="date" name="date" required>
+
+            <button type="submit">حجز موعد</button>
+        </form>
+    </div>
+
+    <link rel="stylesheet" href="style.css">
+</body>
+</html>
